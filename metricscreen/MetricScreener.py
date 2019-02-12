@@ -21,7 +21,7 @@ class MetricLearner:
                  beta_tol=1e-3,
                  solver='dual average',
                  param_update_frac=1,
-                 batch_size=150,
+                 batch_size=500,
                  num_rounds_before_check=25,
                  active_set_stable_threshold=2):
 
@@ -352,7 +352,7 @@ class MetricLearner:
               sample_weight=None,
               subgroup=None,
               max_iter=5000,
-              beta_init='random',
+              beta_init='equal',
               dual_init=0.0,
               lam=None,
               verbose=False,
